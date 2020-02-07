@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.Driver.DriverScript;
 import com.project.utils.ExcelAPI;
 
 public class BaseTest 
@@ -15,6 +16,7 @@ public class BaseTest
 	Properties prop;
 	public ExcelAPI xls;
 	public String testName;
+	public DriverScript ds;
 	
 	
 	 @BeforeTest
