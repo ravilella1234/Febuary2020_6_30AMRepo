@@ -51,6 +51,12 @@ public class BaseTest
 		 //inilize the xls File
 		 //how do i know which excel file to load dynamically
 		 xls=new ExcelAPI(prop.getProperty(suiteName+"_xls"));
+		 
+		 
+		 //Inilize  DriverScript Class
+		 ds=new DriverScript();
+		 ds.setEnvprop(envprop);
+		 ds.setProp(prop);
 	 }
 
 }
