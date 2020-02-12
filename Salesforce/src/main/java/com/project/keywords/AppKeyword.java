@@ -7,5 +7,15 @@ public class AppKeyword extends GenericKeyword
 	{
 		System.out.println("Validating Login");
 	}
+	
+	public void validateTitle()
+	{
+		System.out.println("Validating Title..");
+	}
+	
+	public void validateLink()
+	{
+		System.out.println("Validating  Link....");
+	}
 
 }
