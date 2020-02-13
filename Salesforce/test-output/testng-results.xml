@@ -2,16 +2,16 @@
 <testng-results skipped="2" failed="0" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20704" started-at="2020-02-12T01:49:30Z" finished-at="2020-02-12T01:49:51Z">
+  <suite name="Default suite" duration-ms="23098" started-at="2020-02-13T01:45:18Z" finished-at="2020-02-13T01:45:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20704" started-at="2020-02-12T01:49:30Z" finished-at="2020-02-12T01:49:51Z">
+    <test name="Default test" duration-ms="23098" started-at="2020-02-13T01:45:18Z" finished-at="2020-02-13T01:45:41Z">
       <class name="com.project.suitea.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitea.LoginTest@6a41eaa2]" name="init" is-config="true" duration-ms="1352" started-at="2020-02-12T01:49:30Z" finished-at="2020-02-12T01:49:32Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="init" is-config="true" duration-ms="1431" started-at="2020-02-13T01:45:18Z" finished-at="2020-02-13T01:45:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@6a41eaa2]" name="login" duration-ms="19266" started-at="2020-02-12T01:49:32Z" data-provider="getData" finished-at="2020-02-12T01:49:51Z">
+        <test-method status="PASS" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="login" duration-ms="20034" started-at="2020-02-13T01:45:20Z" data-provider="getData" finished-at="2020-02-13T01:45:40Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@6a41eaa2]" name="login" duration-ms="3" started-at="2020-02-12T01:49:51Z" data-provider="getData" finished-at="2020-02-12T01:49:51Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="quit" is-config="true" duration-ms="1534" started-at="2020-02-13T01:45:40Z" finished-at="2020-02-13T01:45:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="login" duration-ms="3" started-at="2020-02-13T01:45:41Z" data-provider="getData" finished-at="2020-02-13T01:45:41Z">
           <params>
             <param index="0">
               <value>
@@ -36,7 +40,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: RunMode is set to No
-at com.project.suitea.LoginTest.login(LoginTest.java:20)
+at com.project.suitea.LoginTest.login(LoginTest.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,7 +72,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@6a41eaa2]" name="login" duration-ms="2" started-at="2020-02-12T01:49:51Z" data-provider="getData" finished-at="2020-02-12T01:49:51Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="quit" is-config="true" duration-ms="1" started-at="2020-02-13T01:45:41Z" finished-at="2020-02-13T01:45:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="login(java.util.Hashtable)[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="login" duration-ms="2" started-at="2020-02-13T01:45:41Z" data-provider="getData" finished-at="2020-02-13T01:45:41Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: RunMode is set to No
-at com.project.suitea.LoginTest.login(LoginTest.java:20)
+at com.project.suitea.LoginTest.login(LoginTest.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,7 +122,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.suitea.LoginTest@6a41eaa2]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-02-12T01:49:51Z" finished-at="2020-02-12T01:49:51Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="quit" is-config="true" duration-ms="1" started-at="2020-02-13T01:45:41Z" finished-at="2020-02-13T01:45:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.suitea.LoginTest@7cd62f43]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-02-13T01:45:41Z" finished-at="2020-02-13T01:45:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

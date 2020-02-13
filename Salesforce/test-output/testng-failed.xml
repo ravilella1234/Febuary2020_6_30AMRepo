@@ -8,6 +8,7 @@
           <include name="init"/>
           <include name="login" invocation-numbers="1 2"/>
           <include name="afterTest"/>
+          <include name="quit"/>
         </methods>
       </class> <!-- com.project.suitea.LoginTest -->
     </classes>

@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.project.BaseClass.BaseTest;
 import com.project.Driver.DriverScript;
+import com.project.utils.Constants;
 import com.project.utils.DataUtils;
 
 public class LoginTest extends BaseTest
@@ -16,7 +17,7 @@ public class LoginTest extends BaseTest
   @Test(dataProvider = "getData")
   public void login(Hashtable<String, String> data) 
   {
-	  if(data.get("Runmode").equals("N"))
+	  if(data.get(Constants.RUNMODE_COL).equals(Constants.RUNMODE_NO))
 		  throw new SkipException("RunMode is set to No");
 	  
 	  System.out.println("login Test...");

@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -64,12 +65,34 @@ public class GenericKeyword
 	public void click()
 	{
 		System.out.println("clicking :- " + envprop.getProperty(objectKey));
-		driver.findElement(By.xpath(envprop.getProperty(objectKey))).click();
+		//driver.findElement(By.xpath(envprop.getProperty(objectKey))).click();
+		getobject(objectKey).click();
 	}
 	
 	public void type()
 	{
 		System.out.println("Typing :- " + envprop.getProperty(objectKey) + "Data ---" + data.get(dataKey) );
-		driver.findElement(By.xpath(envprop.getProperty(objectKey))).sendKeys(data.get(dataKey));
+		//driver.findElement(By.xpath(envprop.getProperty(objectKey))).sendKeys(data.get(dataKey));
+		getobject(objectKey).sendKeys(data.get(dataKey));
+	}
+	
+	public WebElement getobject(String objectKey)
+	{
+		WebElement element=null;
+		if(objectKey.endsWith("_id")) {
+			element=driver.findElement(By.id(envprop.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_name")) {
+			element=driver.findElement(By.className(envprop.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_xpath")) {
+			element=driver.findElement(By.xpath(envprop.getProperty(objectKey)));
+		}
+		
+		return element;
+	}
+	
+	public void quit()
+	{
+		if(driver!=null)
+		driver.quit();
 	}
 }

@@ -32,7 +32,11 @@ public class DriverScript
 		this.prop = prop;
 	}
 
-
+	public void quit()
+	{
+		if(app!=null)
+		app.quit();
+	}
 
 
 	public void executeKeywords(ExcelAPI xls,String testName,Hashtable<String, String> testData)

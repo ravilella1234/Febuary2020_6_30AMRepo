@@ -3,6 +3,7 @@ package com.project.BaseClass;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.project.Driver.DriverScript;
@@ -58,5 +59,13 @@ public class BaseTest
 		 ds.setEnvprop(envprop);
 		 ds.setProp(prop);
 	 }
+	 
+	 @AfterMethod
+	 public void quit()
+	 {
+		 if(ds!=null)
+		 ds.quit();
+	 }
+	 
 
 }
